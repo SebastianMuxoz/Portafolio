@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastián Muñoz</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4794b139c5.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./Assets/Web development.svg" type="image/x-icon">
+</head>
+<body>
+    <div id="primeraSeccion">
+        <div id="navegacion">
+            <div id="navMitad1">
+                <input type="checkbox" id="check">
+                <label for="check" id="burguer"><i class="fa-solid fa-bars"></i></label>
+                <div id="desplegable">
+                    <label for="check" id="close"><i class="fa-solid fa-xmark"></i></label>
+                    <a href="#primeraSeccion" class="navDesplegableItem">Inicio</a>
+                    <a href="#segundaSeccion" class="navDesplegableItem">Sobre Mí</a>
+                    <a href="#terceraSeccion" class="navDesplegableItem">Proyectos</a>
+                    <a href="#footer" class="navDesplegableItem">Contacto</a>
+                </div>
+            </div>
+            <div id="navMitad2">
+                <nav id="navegacionDesktop">
+                    <a href="#primeraSeccion" class="navItem">Inicio</a>
+                    <a href="#segundaSeccion" class="navItem">Sobre Mí</a>
+                    <a href="#terceraSeccion" class="navItem">Proyectos</a>
+                    <a href="#footer" class="navItem">Contacto</a>
+                </nav>
+            </div>
+        </div>
+        <div id="primeraContainer">
+            <div id="primeraMitad1"></div>
+            <div id="primeraMitad2">
+                <p class="intro">¡Hola! Soy Sebastián Muñoz,</p>
+                <p class="texto1">es un gusto que estés viendo mi Portafolio.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="segundaSeccion">
+        <div id="segundaMitad1">
+            <img src="./Assets/Designer.svg" alt="Diseñador" id="ilustracionSegunda">
+        </div>
+        <div id="segundaMitad2">
+            <p class="intro2">De Buenos Aires, Argentina.</p>
+            <p class="texto2">
+                "Con un gran interés en la programación y el diseño, hoy soy maquetador web 
+                con conocimientos en HTML5 y CSS3, pero dispuesto a aprender cada día más. Me gusta ver el 
+                resultado final de las cosas en mis manos, tener el poder de modificarlas y así ofrecer una 
+                gran experiencia de usuario en cada uno de mis trabajos. A continuación, te dejo algunos de 
+                mis proyectos privados más representativos de mi forma de programar y mis medios de 
+                contacto. Espero te gusten mis proyectos!"
+            </p>
+        </div>
+    </div>
+
+    <div id="terceraSeccion">
+        <p class="tituloTercera">Proyectos</p>
+        <div id="proyectos">
+            
+            <div class="card bg-dark" style="width: 18rem;">
+                <img src="./Assets/Mostaza.PNG" class="card-img-top" alt="Mostaza Web Page">
+                <div class="card-body">
+                  <h5 class="card-title">Mostaza</h5>
+                  <p class="card-text">Recreación del sitio web oficial de Mostaza</p>
+                  <a href="./Assets/Páginas/Mostaza/index.html" class="btn btn-primary">Ver</a>
+                </div>
+            </div>
+
+            <div class="card bg-dark" style="width: 18rem;">
+                <img src="./Assets/Sony.png" class="card-img-top" alt="Sony">
+                <div class="card-body">
+                  <h5 class="card-title">Sony WH-1000XM4</h5>
+                  <p class="card-text">Recreación de la página oficial de los headsets de Sony</p>
+                  <a href="./Assets/Páginas/Sony/index.html" class="btn btn-primary">Ver</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div id="botonesFooter">
+            <a href="mailto: sebastianmunoz204@gmail.com" class="btnFooter"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/sebasti%C3%A1n-mu%C3%B1oz-1b2680239/" class="btnFooter"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="tel: +54 9 11 7360 0480" class="btnFooter"><i class="fa-solid fa-phone"></i></a>
+        </div>
+        <p class="texto3">E-Mail:</p>
+        <p class="texto4">sebastianmunoz204@gmail.com</p>
+        <p class="texto3">Linkedin:</p>
+        <p class="texto4">https://www.linkedin.com/in/sebasti%C3%A1n-mu%C3%B1oz-1b2680239/</p>
+        <p class="texto3">Teléfono:</p>
+        <p class="texto4">+54 9 11 7360 0480</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

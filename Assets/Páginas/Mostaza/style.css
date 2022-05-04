@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+/*     color: white; */
+}
+
+/* Navegación */
+#navegacion{
+    position: fixed;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#btnMenu{
+    margin-left: 1rem;
+    background-color: #CC0526;
+    display: flex;
+    flex-direction: row;
+    padding: 0.7rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 12px black;
+}
+
+#burguer{
+    font-size: 16px;
+    color: white;
+}
+
+.menuText{
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 0.5rem;
+    color: white;
+}
+
+.logo{
+    width: 65%;
+}
+
+.logo:hover{
+    -webkit-transform: rotateY(360deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transition: 300ms;
+}
+
+.logo:not(hover){
+    transition: 300ms;
+}
+
+/* Menu desplegable */
+#menuDesplegable{
+    position: absolute;
+    height: 100vh;
+    width: 50%;
+    background-color: #BA0A22;
+    left: -100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ #menuDesplegable{
+    left: 0%;
+    transition: 300ms;
+}
+
+#check:not(checked) ~ #menuDesplegable{
+    transition: 300ms;
+}
+
+#close{
+    cursor: pointer;
+    float: right;
+    font-size: 48px;
+    margin-left: 1rem;
+    color: white;
+}
+
+.navDesplegable{
+    color: white;
+    text-decoration: none;
+    padding-top: 2rem;
+    margin-left: 1.5rem;
+    font-weight: bold;
+}
+
+/* Primera Sección */
+#primeraSeccion{
+    height: 100vh;
+    background-image: url(./Assets/Home-Web-Wanda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#play1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+}
+
+#play2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+}
+
+.playBtn{
+    background-color: rgba(0, 0, 0, 0);
+    border-color: white;
+    border-radius: 100px;
+    border-width: 3px;
+}
+
+.playBtn:hover{
+    background-color: #BA0A22;
+    transition: 300ms;
+}
+
+.playBtn:not(hover){
+    transition: 300ms;
+}
+
+.textoPlay{
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 12px;
+    color: white;
+}
+
+.textoMenu{
+    color: white;
+}
+
+/* Menú bajo */
+#menuBajo{
+    position: fixed;
+    color: black;
+    height: 10vh;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 0.2rem;
+    padding-right: 0.4rem;
+}
+
+.btnBajo{
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: white;
+    border-radius: 1500px 1500px 0 0;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0;
+    border-bottom: none;
+    color: white;
+}
+
+.btnBajo:hover{
+    background-color: #BA0A22;
+    transition: 300ms;
+}
+
+.btnBajo:not(hover){
+    transition: 300ms;
+}
+
+/* Segunda Sección */
+#segundaSeccion{
+    height: 100vh;
+    background: url(./Assets/WEB-Nuestro-Menu-HomeScroll.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.btnMenu{
+    background-color: rgba(0, 0, 0, 0);
+    border-color: white;
+    border-radius: 100px;
+}
+
+.btnMenu:hover{
+    background-color: #BA0A22;
+    transition: 300ms;
+}
+
+.btnMenu:not(hover){
+    transition: 300ms;
+}
+
+.textoMenu{
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 12px;
+    text-shadow: 1px 1px 5px black;
+}
+
+/* Tercera sección */
+#terceraSeccion{
+    height: 100vh;
+    width: 100%;
+    background: url(./Assets/WEB-Pagina-HomeScroll-Octubre-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+}
+
+#botonesDeDescarga{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+}
+
+#celular{
+    width: 50%;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#descarga{
+    width: 50%;
+/*     height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto1{
+    font-size: 68px;
+    font-weight: 600;
+    text-shadow: -5px -5px 10px black;
+    color: white;
+}
+
+.texto2{
+    color: white;
+    font-size: 48px;
+    font-weight: 600;
+    text-shadow: -2px -2px 5px black;
+}
+
+.texto3{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#iphone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#android{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cuartaSeccion{
+    height: 100vh;
+    background: url(./Assets/WEB-Locales-HomeScroll.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#locales{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-color: white;
+    border-radius: 100px;
+}
+
+#locales:hover{
+    background-color: #BA0A22;
+    transition: 300ms;
+}
+
+#locales:not(hover){
+    transition: 300ms;
+}
+
+.texto4{
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Responsive */
+
+    /* Tablet vertical */
+
+@media (max-width: 950px) and (min-height: 850px){
+    /* Btn menú */
+    #burguer{
+        font-size: 56px;
+    }
+
+    .menuText{
+        font-size: 24px;
+    } 
+
+    #btnMenu{
+        border-radius: 36px;
+    }
+
+    .logo{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    /* Menu Responsive*/
+    .navDesplegable{
+        font-size: 34px;
+        margin-top: 3rem;
+    }
+}
+
+/* Celular vertical */
+
+@media (max-width: 450px){
+    #burguer{
+        font-size: 18px;
+    }
+
+    .menuText{
+        font-size: 14px;
+    }
+
+    .logo{
+        width: 55%;
+        margin-top: 0.5rem;
+    }
+    #menuDesplegable{
+        width: 60%;
+    }
+
+    .navDesplegable{
+        font-size: 14px;
+        margin-top: 1rem;
+    }
+
+    /* Tercera Sección */
+    #terceraSeccion{
+        flex-direction: column;
+    }
+
+    .texto1{
+        font-size: 56px;
+    }
+
+    .texto2{
+        font-size: 36px;
+        margin-bottom: 1.5rem;
+    }
+
+    .texto3{
+        font-size: 14px;
+    }
+
+    #celular{
+        width: 100%;
+    }
+
+    #descarga{
+        width: 100%;
+    }
+
+    #botonesDeDescarga{
+        flex-direction: column;
+    }
+
+    #iphone{
+        margin-bottom: 1rem;
+    }
+
+    #demoCelular{
+        width: 100%;
+    }
+
+}
+
+/* Celular Horizontal */
+@media (max-width: 860px){
+    #burguer{
+        font-size: 24px;
+    }
+
+    .menuText{
+        font-size: 14px;
+    }
+
+    .logo{
+        width: 50%;
+    }
+
+    /* Tercera Sección */
+
+    #demoCelular{
+        width: 80%;
+    }
+
+    .texto1{
+        font-size: 48px;
+    }
+
+    .texto2{
+        font-size: 34px;
+    }
+
+    .texto3{
+        font-size: 14px;
+    }
+}

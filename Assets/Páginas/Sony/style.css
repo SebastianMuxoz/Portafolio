@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Navegación */
+
+#navegacion{
+    color: white;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+#burguer{
+    margin-left: 1rem;
+}
+
+img{
+    width: 100%;
+}
+
+#navegacion > i{
+    margin-right: 1rem;
+}
+
+#carrito:hover{
+    color: #0958CA;
+    cursor: pointer;
+}
+
+#logo{
+    height: 50%;
+}
+
+#navHeader{
+    display: none;
+}
+
+/* Primera */
+
+#primera{
+    width: 100%;
+}
+
+#mitades{
+    padding-left: 1rem;
+}
+
+#primera > img{
+    width: 100%;
+}
+
+#silentWhite{
+    padding: 1rem;
+}
+
+.subt1{
+    color: lightslategrey;
+    font-size: 18px;
+}
+
+.texto1{
+    color: black;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.contenido1{
+    color: lightslategrey;
+}
+
+#botones1{
+    display: flex;
+    flex-direction: row;
+}
+
+.mBtn1{
+    background-color: #3E59F2;
+    font-size: 18px;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.btn1{
+    background-color: #3E59F2;
+    padding: 0.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+/* noise cancelling */
+
+#noiseCancelling{
+    margin-top: 5rem;
+    width: 100%;
+}
+
+#noiseCancelling > img{
+    width: 100%;
+}
+
+.texto2{
+    padding: 0rem 1rem;
+    font-size: 30px;
+}
+
+.contenido2{
+    font-size: 14px;
+    padding: 0rem 1rem;
+}
+
+.btn2{
+    background-color: #3E59F2;
+    padding: 0.5rem;
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.btn2 > i{
+    margin-right: 0.4rem;
+}
+
+/* Processor */
+
+#processor{
+    margin-top: 5rem;
+}
+
+.texto3{
+    font-size: 26px;
+    margin: 0rem 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contenido3{
+    font-size: 14px;
+    margin: 0rem 2rem;
+    margin-bottom: 2rem;
+}
+
+#processorImg{
+    width: 100%;
+}
+
+/* LDAC */
+
+#ldac{
+    margin-bottom: 5rem;
+}
+
+#ldacImg{
+    width: 100%;
+}
+
+.texto4{
+    font-size: 28px;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+/* confianza */
+
+#confianza{
+    padding: 1rem;
+    background-color: #F1F5F9;
+}
+
+#confianzaImg{
+    width: 50%;
+    margin-left: 2rem;
+}
+
+/* footer */
+
+footer{
+    padding: 3rem;
+    background-color: #1F2024;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.contactoBtn{
+    background-color: grey;
+    padding: 0.5rem;
+    color: whitesmoke;
+    margin: 0.2rem;
+}
+
+/* Responsive */
+
+    /* Mobile Landscape */
+@media (min-width: 800px){
+    #processor{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto3{
+        width: 100%;
+    }
+
+    .contenido3{
+        width: 50%;
+    }
+
+    #mitad2{
+        padding-right: 1rem;
+    }
+
+    #confianza{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+    }
+
+    #mitad4{
+        width: 75%;
+        text-align: center;
+    }
+
+    #confianzaImg{
+        width: 100%;
+    }
+}
+
+    /* Tablet Portrait */
+@media (min-width: 900px) and (min-height: 1300px){
+    #burguer{
+        font-size: 36px;
+    }
+
+    #navegacion > i{
+        font-size: 36px;
+    }
+
+    .subt1{
+        font-size: 26px;
+    }
+
+    .texto1{
+        font-size: 46px;
+    }
+
+    .contenido1{
+        font-size: 31px;
+    }
+
+    .btn1{
+        font-size: 26px;
+    }
+
+    .texto2{
+        font-size: 46px;
+    }
+
+    .contenido2{
+        font-size: 31px;
+    }
+
+    #processor{
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+
+    .texto3{
+        font-size: 46px;
+    }
+
+    .contenido3{
+        font-size: 31px;
+    }
+
+    .texto4{
+        font-size: 46px;
+    }
+
+    .contenido4{
+        font-size: 31px;
+    }
+
+    .btn2{
+        font-size: 26px;
+    }
+
+    #confianza{
+        grid-template-columns: auto;
+    }
+
+    #mitad3{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mitad4{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #confianzaImg{
+        width: 50%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1080px){
+    /* Navegación Desktop */
+    #burguer{
+        display: none;
+    }
+
+    #logo{
+        margin-left: 1rem;
+    }
+
+    #navHeader{
+        display: flex;
+        flex-direction: row;
+         list-style: none;
+    }
+
+    .navItem{
+        color: white;
+        text-decoration: none;
+        margin-left: 1rem;
+    }
+
+    #fondoContainer{
+        position: relative;
+    }
+    #mitades{
+        position: absolute;
+        top: 30%;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #mitad5{
+        width: 50%;
+        padding-left: 5rem;
+    }
+
+    #silentWhite{
+        text-align: center;
+        width: 100%;
+    }
+
+    #botones1{
+        align-items: center;
+        justify-content: center;
+    }
+
+    #noiseCancelling{
+        position: relative;
+    }
+
+    #noiseCancellingInfo{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        top: 20%;
+    }
+
+    #mitad7{
+        background-color: rgba(243, 241, 241, 0.8);
+        width: 50%;
+        padding: 2rem;
+    }
+
+    /* Processor */
+
+    #processor{
+        height: 100vh;
+    }
+
+    #mitad1{
+        margin-left: 5rem;
+        width: 50%;
+    }
+
+    #processorImg{
+        width: 70%;
+    }
+
+    /* LDAC */
+    #ldac > img{
+        width: 100%;
+    }
+
+    #ldac{
+        position: relative;
+        margin-bottom: 0;
+    }
+
+    #ldacInfo{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        top: 15%;
+    }
+
+    #mitad9{
+        width: 100%;
+    }
+
+    #mitad10{
+        background-color: rgba(243, 241, 241, 0.8);
+        padding: 3rem;
+    }
+
+    /* Confianza */
+    #confianza{
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+    }
+
+}
