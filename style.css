@@ -103,7 +103,6 @@
 
 /* Segunda Sección */
 #segundaSeccion{
-    height: 100vh;
     background: linear-gradient(to bottom, #7E9FC2, #FEE49F);
     display: flex;
     flex-direction: column;
@@ -198,7 +197,7 @@ footer{
 /* Responsive */
 
     /* Mobile Landscape */
-@media (min-width: 800px) and (min-height: 350px){
+@media (min-width: 650px) and (min-height: 50px){
     /* Segunda Sección */
     #segundaSeccion{
         display: flex;
